@@ -1,7 +1,8 @@
 'use client';
-import React, { useState } from 'react';
-import { motion, AnimatePresence } from 'framer-motion';
+import React, {useState} from 'react';
+import {motion} from 'framer-motion';
 import {useIsMobile} from "@/hooks/use-mobile";
+import {ScrollArea} from "@/components/ui/scroll-area";
 
 
 const BookPageNavigation = () => {
@@ -9,11 +10,11 @@ const BookPageNavigation = () => {
   const isMobile = useIsMobile();
 
   const pages = [
-    { id: 'home', title: 'Home', color: 'bg-blue-500', text: 'text-blue-500' },
-    { id: 'about', title: 'About Us', color: 'bg-green-500', text: 'text-green-500' },
-    { id: 'services', title: 'Services', color: 'bg-purple-500', text: 'text-purple-500' },
-    { id: 'portfolio', title: 'Portfolio', color: 'bg-yellow-500', text: 'text-yellow-500'},
-    { id: 'contact', title: 'Contact', color: 'bg-red-500', text: 'text-red-500' },
+    {id: 'home', title: 'Home', color: 'bg-blue-500', text: 'text-blue-500'},
+    {id: 'about', title: 'About Us', color: 'bg-green-500', text: 'text-green-500'},
+    {id: 'services', title: 'Services', color: 'bg-purple-500', text: 'text-purple-500'},
+    {id: 'portfolio', title: 'Portfolio', color: 'bg-yellow-500', text: 'text-yellow-500'},
+    {id: 'contact', title: 'Contact', color: 'bg-red-500', text: 'text-red-500'},
   ];
 
   const handlePageChange = (pageId) => {
@@ -24,17 +25,95 @@ const BookPageNavigation = () => {
     switch (pageId) {
       case 'home':
         return (
-          <div className="p-8">
-            <h1 className="text-4xl font-bold mb-4">Welcome to Our Website</h1>
-            <p className="text-lg">This is the home page with book-like navigation.</p>
-          </div>
+          <ScrollArea className="w-full h-full">
+            <div className="p-8">
+              <h1 className="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+              <p className="text-lg">This is the home page with book-like navigation.</p>
+            </div>
+          </ScrollArea>
         );
       case 'about':
         return (
-          <div className="p-8">
-            <h1 className="text-4xl font-bold mb-4">About Us</h1>
-            <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-          </div>
+          <ScrollArea className="w-full h-full">
+
+            <div className="p-8">
+              <h1 className="text-4xl font-bold mb-4">About Us</h1>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+            </div>
+          </ScrollArea>
         );
       case 'services':
         return (
@@ -45,17 +124,21 @@ const BookPageNavigation = () => {
         );
       case 'portfolio':
         return (
-          <div className="p-8">
-            <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
-            <p className="text-lg">Check out our latest projects and case studies.</p>
-          </div>
+          <ScrollArea className="w-full h-full">
+            <div className="p-8">
+              <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
+              <p className="text-lg">Check out our latest projects and case studies.</p>
+            </div>
+          </ScrollArea>
         );
       case 'contact':
         return (
-          <div className="p-8">
-            <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
-            <p className="text-lg">Get in touch with our team for inquiries and collaborations.</p>
-          </div>
+          <ScrollArea className="w-full h-full">
+            <div className="p-8">
+              <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+              <p className="text-lg">Get in touch with our team for inquiries and collaborations.</p>
+            </div>
+          </ScrollArea>
         );
       default:
         return null;
@@ -63,15 +146,16 @@ const BookPageNavigation = () => {
   };
 
   return (
-    <div className="flex h-screen  bg-white">
+    <div className="flex h-screen bg-background">
       {/* Main background when no page is active */}
       {activePage === null && (
-        <div className="absolute inset-0 bg-white flex items-center justify-center z-0">
-          <div className="text-center">
-            <h1 className="text-4xl font-bold mb-4">Book-style Navigation</h1>
-            <p className="text-xl">Click any tab to navigate</p>
-          </div>
-        </div>
+        <div></div>
+        // <div className="absolute inset-0 bg-background flex items-center justify-center z-0">
+        // <div className="text-center">
+        // <h1 className="text-4xl font-bold mb-4">Book-style Navigation</h1>
+        // <p className="text-xl">Click any tab to navigate</p>
+        // </div>
+        // </div>
       )}
 
       {/* Navigation tabs */}
@@ -84,7 +168,7 @@ const BookPageNavigation = () => {
           return (
             <motion.div
               key={page.id}
-              className={`h-full ${page.color} cursor-pointer ${isMobile && 'absolute'} `}
+              className={`h-full ${page.color} text-primary-foreground cursor-pointer ${isMobile && 'absolute'} `}
               // style={{
               //   position: 'absolute',
               //   left: `${index * tabWidth}%`,
@@ -120,7 +204,8 @@ const BookPageNavigation = () => {
                 </div>
               ) : (
                 <div className="h-full w-full flex items-center bg-background justify-center overflow-hidden">
-                  <div className={`text-4xl font-bold ${page.text}  tracking-tighter transform -rotate-90 whitespace-nowrap`}>
+                  <div
+                    className={`text-4xl font-bold ${page.text} tracking-tighter transform -rotate-90 whitespace-nowrap`}>
                     {page.title}
                   </div>
                 </div>
