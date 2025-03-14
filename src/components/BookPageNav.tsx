@@ -10,66 +10,27 @@ const BookPageNavigation = () => {
   const isMobile = useIsMobile();
 
   const pages = [
-    {id: 'home', title: 'Home', color: 'bg-blue-500', text: 'text-blue-500'},
-    {id: 'about', title: 'About Us', color: 'bg-green-500', text: 'text-green-500'},
-    {id: 'services', title: 'Services', color: 'bg-purple-500', text: 'text-purple-500'},
-    {id: 'portfolio', title: 'Portfolio', color: 'bg-yellow-500', text: 'text-yellow-500'},
-    {id: 'contact', title: 'Contact', color: 'bg-red-500', text: 'text-red-500'},
+    {id: 'home', title: 'Home', color: 'to-blue-500/20', text: 'text-blue-500'},
+    {id: 'about', title: 'About Us', color: 'to-green-500/20', text: 'text-green-500'},
+    {id: 'services', title: 'Services', color: 'to-purple-500/20', text: 'text-purple-500'},
+    {id: 'portfolio', title: 'Portfolio', color: 'to-yellow-500/20', text: 'text-yellow-500'},
+    {id: 'contact', title: 'Contact', color: 'to-red-500/20', text: 'text-red-500'},
   ];
 
   const handlePageChange = (pageId) => {
-    setActivePage(pageId === activePage ? isMobile ? null : pageId : pageId);
+    setActivePage(pageId === activePage ? isMobile ? null : null : pageId);
   };
 
-  const getPageContent = (pageId) => {
-    switch (pageId) {
+  const getPageContent = (page: any) => {
+    switch (page.id) {
       case 'home':
         return (
           <ScrollArea className="w-full h-full">
             <div className="p-8">
-              <h1 className="text-4xl font-bold mb-4">Welcome to Our Website</h1>
+              <h1 className={`absolute right-4 bottom-4 ${page.text} opacity-40 -z-20 font-cyber-outline leading-none text-[8rem]`}>01</h1>
+              <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline animate-pulse ${page.text}`}>Dragon devs_</h1>
               <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
-              <p className="text-lg">This is the home page with book-like navigation.</p>
+
             </div>
           </ScrollArea>
         );
@@ -78,47 +39,18 @@ const BookPageNavigation = () => {
           <ScrollArea className="w-full h-full">
 
             <div className="p-8">
-              <h1 className="text-4xl font-bold mb-4">About Us</h1>
+              <h1 className={`absolute right-4 bottom-4 ${page.text} opacity-40 -z-20 font-cyber-outline leading-none text-[8rem]`}>02</h1>
+              <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline ${page.text}`}>About Us</h1>
               <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
-              <p className="text-lg">Learn about our company and our mission to create innovative web experiences.</p>
+
             </div>
           </ScrollArea>
         );
       case 'services':
         return (
           <div className="p-8">
-            <h1 className="text-4xl font-bold mb-4">Our Services</h1>
+            <h1 className={`absolute right-4 bottom-4 ${page.text} opacity-40 -z-20 font-cyber-outline leading-none text-[8rem]`}>03</h1>
+            <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline ${page.text}`}>Our Services</h1>
             <p className="text-lg">We offer a wide range of web development and design services.</p>
           </div>
         );
@@ -126,7 +58,8 @@ const BookPageNavigation = () => {
         return (
           <ScrollArea className="w-full h-full">
             <div className="p-8">
-              <h1 className="text-4xl font-bold mb-4">Portfolio</h1>
+              <h1 className={`absolute right-4 bottom-4 ${page.text} opacity-40 -z-20 font-cyber-outline leading-none text-[8rem]`}>04</h1>
+              <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline ${page.text}`}>Portfolio</h1>
               <p className="text-lg">Check out our latest projects and case studies.</p>
             </div>
           </ScrollArea>
@@ -135,7 +68,8 @@ const BookPageNavigation = () => {
         return (
           <ScrollArea className="w-full h-full">
             <div className="p-8">
-              <h1 className="text-4xl font-bold mb-4">Contact Us</h1>
+              <h1 className={`absolute right-4 bottom-4 ${page.text} opacity-40 -z-20 font-cyber-outline leading-none text-[8rem]`}>05</h1>
+              <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline ${page.text}`}>Contact Us</h1>
               <p className="text-lg">Get in touch with our team for inquiries and collaborations.</p>
             </div>
           </ScrollArea>
@@ -146,13 +80,13 @@ const BookPageNavigation = () => {
   };
 
   return (
-    <div className="flex h-screen bg-background">
+    <div className="flex bg-background">
       {/* Main background when no page is active */}
       {activePage === null && (
         <div></div>
         // <div className="absolute inset-0 bg-background flex items-center justify-center z-0">
         // <div className="text-center">
-        // <h1 className="text-4xl font-bold mb-4">Book-style Navigation</h1>
+        // <h1 className={`text-4xl font-semibold mb-4 font-cyber-outline ${page.text">Book-style Navigation</h1>
         // <p className="text-xl">Click any tab to navigate</p>
         // </div>
         // </div>
@@ -168,7 +102,7 @@ const BookPageNavigation = () => {
           return (
             <motion.div
               key={page.id}
-              className={`h-full ${page.color} text-primary-foreground cursor-pointer ${isMobile && 'absolute'} `}
+              className={`h-full text-foreground bg-gradient-to-br from-background from-20%% ${page.color} cursor-pointer absolute`}
               // style={{
               //   position: 'absolute',
               //   left: `${index * tabWidth}%`,
@@ -200,12 +134,12 @@ const BookPageNavigation = () => {
               {/* Tab content */}
               {isActive ? (
                 <div className="w-full h-full overflow-x-hidden">
-                  {getPageContent(page.id)}
+                  {getPageContent(page)}
                 </div>
               ) : (
-                <div className="h-full w-full flex items-center bg-background justify-center overflow-hidden">
+                <div className="h-full bg-background transition-all duration-500 ease-in font-cyber hover:font-cyber-outline w-full flex items-center justify-center overflow-hidden">
                   <div
-                    className={`text-4xl font-bold ${page.text} tracking-tighter transform -rotate-90 whitespace-nowrap`}>
+                    className={`text-4xl hover:font-semibold ${page.text} transform -rotate-90 whitespace-nowrap`}>
                     {page.title}
                   </div>
                 </div>
