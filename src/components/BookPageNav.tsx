@@ -102,7 +102,7 @@ const BookPageNavigation = () => {
           return (
             <motion.div
               key={page.id}
-              className={`h-full text-foreground bg-gradient-to-br from-background from-20%% ${page.color} cursor-pointer absolute`}
+              className={`h-full text-foreground bg-background cursor-pointer absolute`}
               // style={{
               //   position: 'absolute',
               //   left: `${index * tabWidth}%`,
@@ -133,7 +133,7 @@ const BookPageNavigation = () => {
             >
               {/* Tab content */}
               {isActive ? (
-                <div className="w-full h-full overflow-x-hidden">
+                <div className={`w-full h-full bg-gradient-to-br from-background from-20%% ${page.color} overflow-x-hidden`}>
                   {getPageContent(page)}
                 </div>
               ) : (
