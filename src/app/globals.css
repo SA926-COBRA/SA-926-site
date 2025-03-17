@@ -26,6 +26,7 @@
   --color-foreground: var(--foreground);
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
+  --font-roboto: var(--font-roboto);
   --font-cyber: 'Saiba45Regular', sans-serif;
   --font-cyber-outline: 'Saiba45Outline', sans-serif;
   --color-sidebar-ring: var(--sidebar-ring);

@@ -207,7 +207,7 @@ const CyberpunkMenu = () => {
                 <GlitchText text="01" textColor={page.text}/>
               </motion.h1>
 
-              <h1 className={`absolute left-4 top-4 p-2 text-4xl font-semibold mb-4 font-cyber-outline ${page.text}`}>
+              <h1 className={`pb-4 text-4xl font-semibold font-cyber-outline ${page.text}`}>
                 <GlitchText text="Dragon devs_" textColor={page.text}/>
                 {/*<motion.span*/}
                 {/*  className="inline-block w-3 h-8 ml-1 bg-current"*/}
@@ -217,45 +217,18 @@ const CyberpunkMenu = () => {
               </h1>
 
               <motion.p
-                className="text-lg pt-12 z-10"
+                className="text-lg z-10"
                 initial={{opacity: 0, y: 20}}
                 animate={{opacity: 1, y: 0}}
                 transition={{delay: 0.3, duration: 0.8}}
               >
-                <ScrollArea className="w-full h-[70svh]">
                   This is the homehome page with book-like navigation.
                   This is the homehome page with book-like navigation.
                   This is the homehome page with book-like navigation.
                   This is the homehome page with book-like navigation.
                   This is the homehome page with book-like navigation.
                   This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                  This is the homehome page with book-like navigation.
-                </ScrollArea>
+
               </motion.p>
             </div>
           </CyberpunkSpotlight>

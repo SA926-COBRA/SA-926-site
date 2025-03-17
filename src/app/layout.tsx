@@ -1,5 +1,5 @@
 import type {Metadata} from "next";
-import {Geist, Geist_Mono} from "next/font/google";
+import {Geist, Geist_Mono, Roboto} from "next/font/google";
 import "./globals.css";
 import {ThemeProvider} from "next-themes";
 
@@ -12,6 +12,11 @@ const geistMono = Geist_Mono({
   variable: "--font-geist-mono",
   subsets: ["latin"],
 });
+
+const roboto = Roboto({
+  variable: "--font-roboto",
+  subsets: ["latin"]
+})
 
 export const metadata: Metadata = {
   title: "dragondevs_ | Crafting Scalable & Innovative Web Applications",
@@ -27,7 +32,8 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning>
     <head/>
     <body
-      className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      // className={`${geistSans.variable} ${geistMono.variable} antialiased`}
+      className={`${roboto.variable} font-roboto antialiased`}
     >
     <ThemeProvider
       attribute="class"

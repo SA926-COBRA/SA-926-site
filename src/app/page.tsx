@@ -1,10 +1,10 @@
-import Image from "next/image";
-import BookPageNavigation from "@/components/BookPageNav";
+import CyberpunkMenu from "@/components/Cyberpunk";
+import CyberpunkSpotlight from "@/components/CyberpunkSpotlight";
 
 export default function Home() {
   return (
     <div>
-      <BookPageNavigation />
+      <CyberpunkMenu />
     </div>
   );
 }
